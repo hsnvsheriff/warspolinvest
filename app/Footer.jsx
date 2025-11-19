@@ -1,6 +1,6 @@
 "use client";
 
-import React from 'react';
+import React from "react";
 
 export default function Footer() {
   return (
@@ -72,32 +72,64 @@ export default function Footer() {
         </div>
 
         {/* Social Media */}
-        <div className="border-t border-gray-800 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+<div className="border-t border-gray-800 pt-8">
+  <div className="flex flex-col md:flex-row justify-between items-center gap-4">
 
-            <p className="text-gray-500 text-sm">
-              © {new Date().getFullYear()} WarsPolInvest. All rights reserved.
-            </p>
+    <p className="text-gray-500 text-sm">
+      © {new Date().getFullYear()} WarsPolInvest. All rights reserved.
+    </p>
 
-            <div className="flex gap-6">
-              <a 
-                href="https://www.tiktok.com/@warspolinvest.pl" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:opacity-80 transition"
-              >
-                <svg 
-                  className="w-6 h-6" 
-                  fill="white"
-                  viewBox="0 0 48 48"
-                >
-                  <path d="M30.4 6a10 10 0 0 0 6.6 6V18a16.2 16.2 0 0 1-7.2-1.8V30a12 12 0 1 1-12-12c.7 0 1.4.1 2 .2v6.4a6 6 0 1 0 4 5.7V6h6.6z"/>
-                </svg>
-              </a>
-            </div>
+    <div className="flex gap-6">
 
-          </div>
-        </div>
+      {/* TikTok */}
+      <a 
+        href="https://www.tiktok.com/@warspolinvest.pl"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:opacity-80 transition"
+      >
+        <svg className="w-6 h-6" fill="white" viewBox="0 0 48 48">
+          <path d="M30.4 6a10 10 0 0 0 6.6 6V18a16.2 16.2 0 0 1-7.2-1.8V30a12 12 0 1 1-12-12c.7 0 1.4.1 2 .2v6.4a6 6 0 1 0 4 5.7V6h6.6z"/>
+        </svg>
+      </a>
+
+      {/* Instagram */}
+      <a 
+        href="https://www.instagram.com/warspolinvest.pl?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:opacity-80 transition"
+      >
+        <svg 
+          className="w-6 h-6"
+          fill="white"
+          viewBox="0 0 24 24"
+        >
+          <path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3h10zm-5 3.5A5.5 5.5 0 1 0 17.5 13 5.5 5.5 0 0 0 12 7.5zm0 2A3.5 3.5 0 1 1 8.5 13 3.5 3.5 0 0 1 12 9.5zm4.3-3.8a1.2 1.2 0 1 0 1.2 1.2 1.2 1.2 0 0 0-1.2-1.2z"/>
+        </svg>
+      </a>
+
+      {/* Facebook */}
+      <a 
+        href="https://www.facebook.com/profile.php?id=61583090218841"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:opacity-80 transition"
+      >
+        <svg 
+          className="w-6 h-6"
+          fill="white"
+          viewBox="0 0 24 24"
+        >
+          <path d="M22 12a10 10 0 1 0-11.6 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1.9 0 1.8.1 2 .1v2.3h-1.1c-1 0-1.3.6-1.3 1.2V12h2.4l-.4 3h-2v7A10 10 0 0 0 22 12"/>
+        </svg>
+      </a>
+
+    </div>
+
+  </div>
+</div>
+
       </div>
     </footer>
   );

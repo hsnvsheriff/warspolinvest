@@ -15,24 +15,63 @@ const PROJECTS_DATA = {
     subtitle: "Modern, sustainable, and custom-tailored living spaces.",
     images: ["/interior1.png", "/interior2.png", "/interior3.png", "/interior4.png"],
   },
+
   exterior: {
     title: "Contemporary Exterior Architecture",
     subtitle: "Groundbreaking structures designed for the future.",
     media: [
-        { type: 'video', src: '/exteriorvideo.mp4' },
-        { type: 'image', src: '/home2.png' }, 
-        { type: 'image', src: '/exterior1.png' }, 
-        { type: 'image', src: '/exterior2.png' }, 
-        { type: 'image', src: '/exterior3.png' }, 
-        { type: 'image', src: '/exterior4.png' }
+      { type: "video", src: "/exteriorvideo.mp4" },
+      { type: "image", src: "/home2.png" },
+
+      // --- OLD EXTERIORS ---
+      { type: "image", src: "/exterior1.png" },
+      { type: "image", src: "/exterior2.png" },
+      { type: "image", src: "/exterior3.png" },
+      { type: "image", src: "/exterior4.png" },
+
+      // --- NEW EXTERIORS 👇 ---
+      { type: "image", src: "/exterior5.jpeg" },
+      { type: "image", src: "/exterior6.jpeg" },
+      { type: "image", src: "/exterior7.jpeg" },
+      { type: "image", src: "/exterior8.jpeg" },
+      { type: "image", src: "/exterior9.jpeg" },
+      { type: "image", src: "/exterior10.jpeg" },
+      { type: "image", src: "/exterior11.jpeg" },
+      { type: "image", src: "/exterior12.jpeg" },
+      { type: "image", src: "/exterior13.jpeg" },
+      { type: "image", src: "/exterior14.jpeg" },
     ],
   },
+
   infrastructure: {
     title: "Specialized Water Infrastructure",
     subtitle: "Krakow S7 Water Tanks & Engineering",
-    images: ["/watertank1.png", "/watertank2.png", "/watertank3.png", "/watertank4.png", "/watertank5.png", "/watertank6.png", "/watertank7.png"],
+    images: [
+      "/watertank1.png",
+      "/watertank2.png",
+      "/watertank3.png",
+      "/watertank4.png",
+      "/watertank5.png",
+      "/watertank6.png",
+      "/watertank7.png",
+    ],
+  },
+
+  // ⭐ NEW PROJECT ADDED HERE
+  klaudyn: {
+    title: "Klaudyn Warszaw Residential Complex",
+    subtitle: "Modern multi-unit housing with premium engineering.",
+    images: [
+      "/Klaudynwarszaw1.jpeg",
+      "/Klaudynwarszaw2.jpeg",
+      "/Klaudynwarszaw3.jpeg",
+      "/Klaudynwarszaw4.jpeg",
+      "/Klaudynwarszaw5.jpeg",
+      "/Klaudynwarszaw6.jpeg",
+    ],
   },
 };
+
 // --------------------------------------------------------------------------
 
 // --- Component for Image/Video Gallery Slider (Fixed for Next/Image) ---
@@ -174,6 +213,27 @@ export default function HomeContent() {
                 View All Infrastructure Case Studies <ArrowRight className="w-4 h-4 ml-2 inline-block" />
             </Link>
         </div>
+        {/* KLAUDYN WARSAW PROJECT */}
+<div className="mt-20 pt-10 border-t border-gray-200">
+  <h3 className="text-3xl font-bold text-gray-900 mb-6">
+    {PROJECTS_DATA.klaudyn.title}
+  </h3>
+  <p className="text-lg text-gray-600 mb-8">
+    {PROJECTS_DATA.klaudyn.subtitle}
+  </p>
+
+  <MediaSlider
+    media={PROJECTS_DATA.klaudyn.images.map(src => ({ type: "image", src }))}
+    title="Klaudyn Warsaw Gallery"
+    icon={GalleryHorizontal}
+  />
+
+  <Link href="/projects" className="mt-8 block text-center text-blue-600 font-semibold hover:text-blue-700 transition">
+    View Klaudyn Warsaw Details
+    <ArrowRight className="w-4 h-4 ml-2 inline-block" />
+  </Link>
+</div>
+
       </section>
       
     </main>
