@@ -209,9 +209,6 @@ export default function HomeContent() {
                 icon={Grid3x3}
             />
             
-            <Link href="/projects" className="mt-8 block text-center text-blue-600 font-semibold hover:text-blue-700 transition">
-                View All Infrastructure Case Studies <ArrowRight className="w-4 h-4 ml-2 inline-block" />
-            </Link>
         </div>
         {/* KLAUDYN WARSAW PROJECT */}
 <div className="mt-20 pt-10 border-t border-gray-200">
@@ -228,10 +225,6 @@ export default function HomeContent() {
     icon={GalleryHorizontal}
   />
 
-  <Link href="/projects" className="mt-8 block text-center text-blue-600 font-semibold hover:text-blue-700 transition">
-    View Klaudyn Warsaw Details
-    <ArrowRight className="w-4 h-4 ml-2 inline-block" />
-  </Link>
 </div>
 
       </section>
